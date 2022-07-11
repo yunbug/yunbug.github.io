@@ -107,7 +107,7 @@
 
 <pre><code>禁用/停止自带的firewalld服务
 </code></pre>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld.service</span><br><span class="line"><span class="comment"># 停止firewall</span></span><br><span class="line">systemctl <span class="built_in">disable</span> firewalld.service</span><br><span class="line"><span class="comment"># 禁止firewall开机启动</span></span><br><span class="line">firewall-cmd --state</span><br><span class="line"><span class="comment"># 查看默认防火墙状态（关闭后显示not running，开启后显示running）</span></span><br><span class="line"><span class="comment"># firewall-cmd --state </span></span><br><span class="line">not running</span><br><span class="line">  </span><br><span class="line"><span class="comment">#停止firewalld服务</span></span><br><span class="line">systemctl stop firewalld</span><br><span class="line"><span class="comment">#禁用firewalld服务</span></span><br><span class="line">systemctl mask firewalld</span><br><span class="line"><span class="comment">#centos6系统#####</span></span><br><span class="line"><span class="comment">#--临时关闭防火墙</span></span><br><span class="line">servcie iptables stop</span><br><span class="line"><span class="comment"># --永久关闭防火墙</span></span><br><span class="line">chkconfig iptables off</span><br><span class="line"><span class="comment">#centos7系统</span></span><br><span class="line"><span class="comment">#停止firewall</span></span><br><span class="line">systemctl stop firewalld.service</span><br><span class="line"><span class="comment">#禁止firewall开机启动</span></span><br><span class="line">systemctl <span class="built_in">disable</span> firewalld.service </span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#centos7系统</span></span><br><span class="line"><span class="comment">#停止firewall</span></span><br><span class="line">systemctl stop firewalld.service</span><br><span class="line"><span class="comment">#禁止firewall开机启动</span></span><br><span class="line">systemctl <span class="built_in">disable</span> firewalld.service </span><br><span class="line"><span class="comment">#停止firewalld服务</span></span><br><span class="line">systemctl stop firewalld</span><br><span class="line"><span class="comment">#禁用firewalld服务</span></span><br><span class="line">systemctl mask firewalld</span><br><span class="line">firewall-cmd --state</span><br><span class="line"><span class="comment"># 查看默认防火墙状态（关闭后显示not running，开启后显示running）</span></span><br><span class="line"><span class="comment"># firewall-cmd --state </span></span><br><span class="line">not running</span><br><span class="line"></span><br><span class="line"><span class="comment">#centos6系统#####</span></span><br><span class="line"><span class="comment">#--临时关闭防火墙</span></span><br><span class="line"><span class="comment">#servcie iptables stop</span></span><br><span class="line"><span class="comment"># --永久关闭防火墙</span></span><br><span class="line"><span class="comment">#chkconfig iptables off</span></span><br><span class="line"><span class="comment">#停止iptables服务</span></span><br><span class="line"><span class="comment">#systemctl stop iptables</span></span><br><span class="line"><span class="comment">#禁用iptables服务</span></span><br><span class="line"><span class="comment">#systemctl mask iptables</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <pre><code>安装 iptable iptable-service
 </code></pre>
@@ -122,12 +122,6 @@
 <p>Debian 7 iptables防火墙安装参考：<br><a target="_blank" rel="noopener" href="https://naibawu.com/1856.html">https://naibawu.com/1856.html</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/94e95f0b2a8a">https://www.jianshu.com/p/94e95f0b2a8a</a></p>
  
       <!-- reward -->
-      
-      <div id="reword-out">
-        <div id="reward-btn">
-          Donate
-        </div>
-      </div>
       
     </div>
     
@@ -228,8 +222,8 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2022
-        <i class="ri-heart-fill heart_icon"></i> John Doe
+        2017-2022
+        <i class="ri-heart-fill heart_icon"></i> 云烟
       </li>
     </ul>
     <ul>
@@ -258,8 +252,6 @@
     <ul>
       <li>
         <!-- cnzz统计 -->
-        
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
         
       </li>
     </ul>
