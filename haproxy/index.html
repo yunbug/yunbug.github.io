@@ -19,19 +19,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/archives/2066/"/>
+    <link rel="canonical" href="http://example.com/haproxy/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="描述">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标题">
-<meta property="og:url" content="http://example.com/archives/2066/index.html">
+        <meta name="description" content="只有普通的转发，没有HTTP反代1，安装HAPROXYLINUX 的源中基本都携带了，所以不需要额外下载二进制文件 123apt install haproxy -yyum install haproxy -y  很简单 2，配置文件正常情况下载，配置文件在&#x2F;etc&#x2F;haproxy 目录中 转发配置 123456789101112131415161718192021222324">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Haproxy 安装和转发配置">
+<meta property="og:url" content="http://example.com/haproxy/index.html">
 <meta property="og:site_name" content="标题">
-<meta property="og:description" content="描述">
+<meta property="og:description" content="只有普通的转发，没有HTTP反代1，安装HAPROXYLINUX 的源中基本都携带了，所以不需要额外下载二进制文件 123apt install haproxy -yyum install haproxy -y  很简单 2，配置文件正常情况下载，配置文件在&#x2F;etc&#x2F;haproxy 目录中 转发配置 123456789101112131415161718192021222324">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-06-05T22:06:06.000Z">
+<meta property="article:modified_time" content="2024-07-29T15:23:04.705Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="VPS">
 <meta name="twitter:card" content="summary">
     
     
@@ -44,7 +47,7 @@
     
     <title>
         
-            Archive: 2066 -
+            Haproxy 安装和转发配置 -
         
         云烟小破绽
     </title>
@@ -398,118 +401,282 @@
             <div class="main-content">
 
                 
-                    <div class="archive-container shadow-none hover:shadow-none sm:shadow-redefine sm:hover:shadow-redefine-hover">
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">Haproxy 安装和转发配置</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">给白傻子买瓜子去</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-06-06 06:06:06</span>
+        <span class="mobile">2024-06-06 06:06:06</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-07-29 23:23:04</span>
+            <span class="mobile">2024-07-29 23:23:04</span>
+            <span class="hover-info">Updated</span>
+        </span>
     
 
-<div class="archive-list-container">
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2066</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
-            </div>
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
-              
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
                 
                     
-                    <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='06-06'>
+                        
+                        <li>
+                            <a href="/categories/VPS/">VPS</a>&nbsp;
+                        </li>
+                    
+                    
                 
-                    
-                        <a href="/hello-world/" class="block overflow-hidden w-fit">
-                            <span class="article-title mb-0.5 text-2xl">Hello World</span>
-                        </a>
-                    
-              
             </ul>
-        </section>
+        </span>
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2024</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">3</span>
-            </div>
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
-              
-                
-                    
-                        <a href="/Azure-Cli%20%E5%BC%80SG/" class="block overflow-hidden w-fit">
-                            <span class="article-title mb-0.5 text-2xl">利用Azure-Cli 学生套餐免费创建新加坡VPS</span>
-                        </a>
-                    
-              
-                
-                    
-                        <a href="/haproxy/" class="block overflow-hidden w-fit">
-                            <span class="article-title mb-0.5 text-2xl">Haproxy 安装和转发配置</span>
-                        </a>
-                    
-              
-                
-                    
-                    <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='04-05'>
-                
-                    
-                        <a href="/ZMAP%E6%89%AB%E6%8F%8F/" class="block overflow-hidden w-fit">
-                            <span class="article-title mb-0.5 text-2xl">ZMAP扫描</span>
-                        </a>
-                    
-              
-            </ul>
-        </section>
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2020</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">2</span>
-            </div>
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
-              
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
                 
-                    
-                    <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='03-10'>
+                    <li>
+                        <a href="/tags/VPS/">VPS</a>&nbsp;
+                    </li>
                 
-                    
-                        <a href="/NTP/" class="block overflow-hidden w-fit">
-                            <span class="article-title mb-0.5 text-2xl">UDP-NTP反射放大攻击例子</span>
-                        </a>
-                    
-              
-                
-                    
-                    <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='01-08'>
-                
-                    
-                        <a href="/linux%E5%8F%AA%E5%85%81%E8%AE%B8%E6%9F%90%E4%B8%AA%E5%9B%BD%E5%AE%B6%E8%AE%BF%E9%97%AE%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3/" class="block overflow-hidden w-fit">
-                            <span class="article-title mb-0.5 text-2xl">linux只允许某个国家访问某个端口</span>
-                        </a>
-                    
-              
             </ul>
-        </section>
+        </span>
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2018</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
-            </div>
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
-              
-                
-                    
-                    <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-15'>
-                
-                    
-                        <a href="/linux%E5%B8%B8%E7%94%A8/" class="block overflow-hidden w-fit">
-                            <span class="article-title mb-0.5 text-2xl">linux常用命令</span>
-                        </a>
-                    
-              
-            </ul>
-        </section>
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h3 id="只有普通的转发，没有HTTP反代"><a href="#只有普通的转发，没有HTTP反代" class="headerlink" title="只有普通的转发，没有HTTP反代"></a>只有普通的转发，没有HTTP反代</h3><h3 id="1，安装HAPROXY"><a href="#1，安装HAPROXY" class="headerlink" title="1，安装HAPROXY"></a>1，安装HAPROXY</h3><p>LINUX 的源中基本都携带了，所以不需要额外下载二进制文件</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt install haproxy -y</span><br><span class="line"></span><br><span class="line">yum install haproxy -y</span><br></pre></td></tr></table></figure></div>
+
+<p>很简单</p>
+<h3 id="2，配置文件"><a href="#2，配置文件" class="headerlink" title="2，配置文件"></a>2，配置文件</h3><p>正常情况下载，配置文件在&#x2F;etc&#x2F;haproxy 目录中</p>
+<p>转发配置</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">global</span><br><span class="line">	ulimit-n  512000</span><br><span class="line">	log /dev/log    local0</span><br><span class="line">	log /dev/log    local1 notice</span><br><span class="line">	chroot /var/lib/haproxy</span><br><span class="line">	stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners</span><br><span class="line">	stats timeout 30s</span><br><span class="line">	user haproxy</span><br><span class="line">	group haproxy</span><br><span class="line">	daemon</span><br><span class="line"></span><br><span class="line">defaults</span><br><span class="line">	log global</span><br><span class="line">	mode tcp</span><br><span class="line">	option tcplog</span><br><span class="line">	option dontlognull</span><br><span class="line">	timeout connect 5000</span><br><span class="line">	timeout client  50000</span><br><span class="line">	timeout server  50000</span><br><span class="line"></span><br><span class="line">frontend tcp_forward</span><br><span class="line">	bind :::443</span><br><span class="line">	default_backend tcp_backend</span><br><span class="line"></span><br><span class="line">backend tcp_backend</span><br><span class="line">	balance roundrobin</span><br><span class="line">	server remote_server1 1.1.1.1:80 check</span><br><span class="line">	server remote_server2 [2400:1111:ffff:eeee:dddd:cccc:bbbb:aaaa]:80 check</span><br><span class="line">	</span><br></pre></td></tr></table></figure></div>
+
+<p>特别 bind :::443 为绑定端口 IPV6和IPV4<br>如果只想绑定 V4 可以用 *:443</p>
+<p>临时写的，没什么好说的</p>
+<p>其中的remote_server1 就是后端服务器1<br>remote_server2 就是后端服务器2</p>
+<p>还有一个健康检查来实现负载均衡，代码没了，就没加了，大概就这样</p>
+<p>haproxy在安装的时候会自动启动，所以它默认会有进程守护</p>
+<p>设置开机启动</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable haproxy.service</span><br></pre></td></tr></table></figure></div>
+
+<p>启动服务</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start haproxy.service</span><br></pre></td></tr></table></figure></div>
+
+<p>停止服务</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop haproxy.service</span><br></pre></td></tr></table></figure></div>
+
+
+<p>查看运行状态</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status haproxy.service</span><br></pre></td></tr></table></figure></div>
+
+
+<p>重启服务</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service haproxy restart</span><br></pre></td></tr></table></figure></div>
+
+
+<p>单独启动服务 （不建议直接使用，否则可能存在后台运行）</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">haproxy -f /etc/haproxy/haproxy.cfg</span><br></pre></td></tr></table></figure></div>
+
+<p>如果出现后台多个haproxy，可以结束 haproxy 进程</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkill -9 haproxy </span><br></pre></td></tr></table></figure></div>
+
+<h3 id="额外-ulimit"><a href="#额外-ulimit" class="headerlink" title="额外 ulimit"></a>额外 ulimit</h3><p>ulimit 临时提高文件描述符限制</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ulimit -n 999999</span><br></pre></td></tr></table></figure></div>
+
+<p>也可以久提高文件描述符限制，自行百度</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> Haproxy 安装和转发配置</li>
+        <li><strong>Author:</strong> 给白傻子买瓜子去</li>
+        <li><strong>Created at
+                :</strong> 2024-06-06 06:06:06</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-07-29 23:23:04
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://txt.al/haproxy/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
 </div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/VPS/">#VPS</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/Azure-Cli%20%E5%BC%80SG/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">利用Azure-Cli 学生套餐免费创建新加坡VPS</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/ZMAP%E6%89%AB%E6%8F%8F/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">ZMAP扫描</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">Haproxy 安装和转发配置</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AA%E6%9C%89%E6%99%AE%E9%80%9A%E7%9A%84%E8%BD%AC%E5%8F%91%EF%BC%8C%E6%B2%A1%E6%9C%89HTTP%E5%8F%8D%E4%BB%A3"><span class="nav-text">只有普通的转发，没有HTTP反代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1%EF%BC%8C%E5%AE%89%E8%A3%85HAPROXY"><span class="nav-text">1，安装HAPROXY</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%EF%BC%8C%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-text">2，配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%9D%E5%A4%96-ulimit"><span class="nav-text">额外 ulimit</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
 
                 
 
@@ -593,6 +760,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
